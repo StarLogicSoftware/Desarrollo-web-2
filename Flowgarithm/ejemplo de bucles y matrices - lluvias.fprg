@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ejemplo de bucles y matrices - lluvias"/>
+        <attribute name="authors" value="Nicolas Cursos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-10 08:42:23 p.&#160;m."/>
+        <attribute name="created" value="Tmljb2xhcyBDdXJzb3M7REVTS1RPUC1MS0ZHTjBKOzIwMjQtMTAtMTA7MDY6NDY6MTUgcC7CoG0uOzQwNTE="/>
+        <attribute name="edited" value="Tmljb2xhcyBDdXJzb3M7REVTS1RPUC1MS0ZHTjBKOzIwMjQtMTAtMTA7MDg6NDI6MjMgcC7CoG0uOzI7NDE1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lluvias" type="Integer" array="True" size="10"/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <declare name="sumador" type="Integer" array="False" size=""/>
+            <assign variable="sumador" expression="0"/>
+            <for variable="contador" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;ingresa el valor de lluvia: &quot;" newline="True"/>
+                <input variable="lluvias[contador]"/>
+            </for>
+            <for variable="contador" start="0" end="9" direction="inc" step="1">
+                <assign variable="sumador" expression="sumador + lluvias[contador]"/>
+            </for>
+            <output expression="sumador / 10" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
