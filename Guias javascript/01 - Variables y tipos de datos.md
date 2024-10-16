@@ -1,6 +1,6 @@
 ### Tipos de datos en JavaScript
 
-En JavaScript, existen varios tipos de datos primitivos. A continuación te los describo (salvo `BigInt`):
+En JavaScript, existen varios tipos de datos primitivos. A continuación te los describo:
 
 1. **`number`**: Representa números, tanto enteros como de punto flotante.
 
