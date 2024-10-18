@@ -1,4 +1,6 @@
-### Tipos de datos en JavaScript
+# Tutorial de JavaScript: Variables y tipos de datos
+
+## Tipos de datos en JavaScript
 
 En JavaScript, existen varios tipos de datos primitivos. A continuación te los describo:
 
@@ -49,7 +51,7 @@ En JavaScript, existen varios tipos de datos primitivos. A continuación te los 
      ```
 ---
 
-### Variables en JavaScript
+## Variables en JavaScript
 
 En JavaScript, las variables se declaran usando `let` o `const`. Aquí te explico la diferencia:
 
