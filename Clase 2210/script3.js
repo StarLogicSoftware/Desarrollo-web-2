@@ -1,5 +1,5 @@
 let total = 0
-let precio = 0
+let precio
 let continuar
 let cantidad
 
@@ -10,7 +10,7 @@ do {
 	total += precio * cantidad
     
 	continuar = confirm("¿Quiere agregar más productos?")
-    
+
 } while (continuar)
 
 const pago =  parseInt(prompt(`Total a pagar: ${total}. Ingrese el pago del cliente`))
