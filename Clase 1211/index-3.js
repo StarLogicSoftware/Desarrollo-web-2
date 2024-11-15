@@ -1,18 +1,3 @@
-// const ul = document.querySelector("#listado")
-
-// fetch("https://jsonplaceholder.typicode.com/users")
-// 	.then((response) => response.json())
-// 	.then((dato) => {
-// 		dato.forEach((element) => {
-// 			const li = document.createElement("li")
-// 			li.innerText = element.name
-
-// 			console.log(dato.name)
-
-// 			ul.appendChild(li)
-// 		})
-// 	})
-
 const tareas = []
 let continuar = true
 
