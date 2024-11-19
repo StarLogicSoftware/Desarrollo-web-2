@@ -100,7 +100,9 @@ const fecha = new Date(2023, 10, 18);
 console.log(fecha.toString()); // Sáb Nov 18 2023 00:00:00 GMT+0000
 console.log(fecha.toDateString()); // Sat Nov 18 2023
 console.log(fecha.toISOString()); // 2023-11-18T00:00:00.000Z
-console.log(fecha.toLocaleDateString('es-ES')); // 18/11/2023
+console.log(fecha.toLocaleDateString('es-AR')); // 18/11/2023
+console.log(fecha.toLocaleTimeString('es-AR')); // 06:40:48
+
 ```
 
 ---
