@@ -35,7 +35,7 @@ form.addEventListener("submit", (evento) => {
 
 	tareas.push(tarea)
 
-    guardarTareas(tarea)
+    guardarTareas(tareas)
 
 	agrearTareaAListado(tarea)
 })
