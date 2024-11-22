@@ -1,3 +1,5 @@
+import { guardarTareas, obtenerTareas } from './guardadoLocal.js'
+
 const tareas = []
 
 const agrearTareaAListado = (tarea) => {
@@ -9,17 +11,6 @@ const agrearTareaAListado = (tarea) => {
 	li.textContent = `${tarea.titulo} - ${tarea.desc} `
 
 	listado.appendChild(li)
-}
-
-const guardarTareas = (listadoTareas) => {
-    const tareasString = JSON.stringify(listadoTareas)
-	localStorage.setItem("tareasPendientes", tareasString)
-}
-
-const obtenerTareas = (arrayOriginal) => {
-    const tareasJson = localStorage.getItem("tareasPendientes")
-	const tareasArray = JSON.parse(tareasJson)
-    Array.prototype.push.apply(arrayOriginal, tareasArray)
 }
 
 const form = document.querySelector("#formulario")
