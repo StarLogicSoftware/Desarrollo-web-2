@@ -2,13 +2,13 @@ import { guardarTareas, obtenerTareas } from './guardadoLocal.js'
 
 const tareas = []
 
-const agrearTareaAListado = (tarea) => {
+const agrearTareaAListado = ( {titulo, desc} ) => {
 	const listado = document.querySelector("#listado")
 
 	const li = document.createElement("li")
 	li.style.fontWeight = "bold"
 	li.style.fontSize = "20px"
-	li.textContent = `${tarea.titulo} - ${tarea.desc} `
+	li.textContent = `${titulo} - ${desc} `
 
 	listado.appendChild(li)
 }
