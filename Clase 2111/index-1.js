@@ -1,23 +1,42 @@
-import { guardarTareas, obtenerTareas } from './guardadoLocal.js'
+import { guardarTareas, obtenerTareas } from "./guardadoLocal.js"
 
-const tareas = []
+let tareas = []
+const tareasfinalizadas = []
 
-const agrearTareaAListado = ( {titulo, desc} ) => {
-	const listado = document.querySelector("#listado")
+const form = document.querySelector("#formulario")
+const botonfinalizarTareas = document.querySelector("#boton-finalizados")
+const ulFinalizados = document.querySelector("#listado-finalizado")
+const listado = document.querySelector("#listado")
 
+botonfinalizarTareas.addEventListener("click", () => {
+	// tareasfinalizadas = [...tareasfinalizadas, ...tareas]
+
+	tareas.forEach((item) => {
+		tareasfinalizadas.push(item)
+	})
+	tareas = []
+
+	ulFinalizados.innerHTML = ""
+	listado.innerHTML = ""
+
+	tareasfinalizadas.forEach((item) => {
+		agrearTareaAListado(ulFinalizados, item)
+	})
+})
+
+const agrearTareaAListado = (lista, { titulo, desc }) => {
 	const li = document.createElement("li")
 	li.style.fontWeight = "bold"
 	li.style.fontSize = "20px"
 	li.textContent = `${titulo} - ${desc} `
-
-	listado.appendChild(li)
+	lista.appendChild(li)
 }
-
-const form = document.querySelector("#formulario")
 
 document.addEventListener("DOMContentLoaded", () => {
 	obtenerTareas(tareas)
-	tareas.forEach(agrearTareaAListado)
+	tareas.forEach( (item) => {
+		agrearTareaAListado(listado, item)
+	})
 })
 
 form.addEventListener("submit", (evento) => {
@@ -35,7 +54,7 @@ form.addEventListener("submit", (evento) => {
 
 	tareas.push(tarea)
 
-    guardarTareas(tareas)
+	guardarTareas(tareas)
 
-	agrearTareaAListado(tarea)
+	agrearTareaAListado(listado, tarea)
 })
