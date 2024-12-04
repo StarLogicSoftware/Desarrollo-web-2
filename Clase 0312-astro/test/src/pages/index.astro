@@ -1,0 +1,32 @@
+---
+import Bienvenida from "../components/HolaQueTal.astro"
+import Layout from "../layouts/Layout.astro"
+
+const datos = [
+	{
+		titulo:"titulo1",
+		descripcion:"desc1"
+	},
+	{
+		titulo:"titulo2",
+		descripcion:"desc2"
+	},
+	{
+		titulo:"titulo 3",
+		descripcion:"desc 3"
+	}
+]
+---
+
+<Layout>
+	<h1>Entradas del blog</h1>
+	<section>
+		{
+			datos.map( ({titulo, descripcion}) => {
+				return(
+					<Bienvenida titulo={titulo} descripcion={descripcion}/>
+				)
+			})
+		}
+	</section>
+</Layout>
