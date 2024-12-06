@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Tarjeta from '../components/tarjeta.astro'
+import { Image } from 'astro:assets';
+import gatito from "../assets/img/foto-gatito.jpg"
+---
+
+<Layout titulo="Pagina de purificacion de agua">
+	<h1>Curso de astro!</h1>
+	<section>
+		<h2>Mis cursos</h2>
+		<!-- <img src="" alt=""> -->
+		<Image src={gatito} alt={"imagen de gatito"} width={200} height={200} format='webp'/>
+
+		<Tarjeta href="/pagina1" link="ir a pagina 1" titulo="titulo 1" contenido="contenido del componente 1"/>
+		<Tarjeta href="/pagina2" link="ir a pagina 2" titulo="titulo 2" contenido="contenido del componente 2"/>
+		<Tarjeta href="/pagina3" link="ir a pagina 3" titulo="titulo 3" contenido="contenido del componente 3"/>
+		<Tarjeta href="/pagina4" link="ir a pagina 4" titulo="titulo 4" contenido="contenido del componente 4"/>
+	</section>
+</Layout>
