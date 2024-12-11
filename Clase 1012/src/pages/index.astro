@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Alerta from "../components/alerta.astro"
+import TarjetaPurificaciones from "../components/alertaDescripcion.astro"
+import DataPurificaciones from "../assets/data.json"
+
+DataPurificaciones.forEach((item) => {
+	console.log(item)
+})
+---
+
+<Layout titulo="Purificacion de agua">
+	{
+		DataPurificaciones.map((item) => {
+			return(
+				<TarjetaPurificaciones titulo={item.titulo} descripcion={item.descripcion} detalle={item.detalle}/>
+			)
+		})
+	}
+
+	<!-- <Alerta titulo="Hola gente"/>
+	<Alerta titulo="chau gente"/>
+	<TarjetaPurificaciones titulo="titulo 1" descripcion="desc 1" detalle="detalle 1"/> -->
+</Layout>

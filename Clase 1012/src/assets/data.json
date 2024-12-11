@@ -1,0 +1,22 @@
+[
+    {
+        "titulo":"Destilacion",
+        "descripcion":"descripcion de la destilacion",
+        "detalle":"detalle de la destioalcion"
+    },
+    {
+        "titulo":"Evaporacion",
+        "descripcion":"descripcion de la Evaporacion",
+        "detalle":"detalle de la Evaporacion"
+    },
+    {
+        "titulo":"Filtracion",
+        "descripcion":"descripcion de la Filtracion",
+        "detalle":"detalle de la Filtracion"
+    }, 
+    {
+        "titulo":"Osmosis inversa",
+        "descripcion":"descripcion de la Osmosis inversa",
+        "detalle":"detalle de la Osmosis inversa"
+    }
+]

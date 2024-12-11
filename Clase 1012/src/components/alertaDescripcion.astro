@@ -1,0 +1,10 @@
+---
+const { titulo, descripcion, detalle } = Astro.props
+---
+
+<div class="alert alert-success" role="alert">
+	<h4 class="alert-heading">{titulo}</h4>
+	<p>{descripcion}</p>
+	<hr />
+	<p class="mb-0">{detalle}</p>
+</div>
