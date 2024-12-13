@@ -1,0 +1,23 @@
+---
+const { item: nota } = Astro.props
+const { titulo: encabezado, descripcion: desc } = nota
+---
+
+<h1>{encabezado}</h1>
+<p>{desc}</p>
+
+<script>
+	// const h1 = document.querySelector("h1")
+
+	// h1?.addEventListener("click", () => {
+	// 	alert("Pinchaste sobre el h1!")
+	// })
+</script>
+
+<style>
+	h1 {
+		color: gray;
+		background-color: black;
+		padding: 10px;
+	}
+</style>

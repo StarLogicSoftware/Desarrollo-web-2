@@ -2,9 +2,21 @@
 import Layout from "../layouts/Layout.astro"
 import Alerta from "../components/alerta.astro"
 import AlertaDescripcion from "../components/alertaDescripcion.astro"
+import Seccion from "../components/Seccion.astro"
 ---
 
 <Layout titulo="Destilacion">
-	<Alerta titulo="Esta es la apgina de destilacion"/>
-	<AlertaDescripcion titulo="titulo 1" descripcion="desc 1" detalle="detalle 1"/>
+	<Seccion>
+		<h2>Lorem ipsum dolor sit amet.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad fugit ea vel!</p>
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem illum accusantium voluptatibus vitae doloribus. Atque amet dolorum laudantium eveniet, tempore nostrum voluptatum saepe necessitatibus. Quam.</p>
+	</Seccion>
+	<Seccion>
+		<h2>Lorem, ipsum dolor.</h2>
+		<ul>
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3</li>
+		</ul>
+	</Seccion>
 </Layout>

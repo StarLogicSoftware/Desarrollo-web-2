@@ -2,21 +2,25 @@
     {
         "titulo":"Destilacion",
         "descripcion":"descripcion de la destilacion",
-        "detalle":"detalle de la destioalcion"
+        "detalle":"detalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalcion",
+        "link":"destilacion"
     },
     {
         "titulo":"Evaporacion",
         "descripcion":"descripcion de la Evaporacion",
-        "detalle":"detalle de la Evaporacion"
+        "detalle":"detalle de la Evaporaciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalcion",
+        "link":"evaporacion"
     },
     {
         "titulo":"Filtracion",
         "descripcion":"descripcion de la Filtracion",
-        "detalle":"detalle de la Filtracion"
+        "detalle":"detalle de la Filtraciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalcion",
+        "link":"filtracion"
     }, 
     {
         "titulo":"Osmosis inversa",
         "descripcion":"descripcion de la Osmosis inversa",
-        "detalle":"detalle de la Osmosis inversa"
+        "detalle":"detalle de la Osmosis inversadetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalciondetalle de la destioalcion",
+        "link":"osmosis"
     }
 ]

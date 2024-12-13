@@ -1,10 +1,12 @@
 ---
-const { titulo, descripcion, detalle } = Astro.props
+const { publicacion } = Astro.props
+const {titulo, descripcion:desc, detalle, link} = publicacion
 ---
 
 <div class="alert alert-success" role="alert">
 	<h4 class="alert-heading">{titulo}</h4>
-	<p>{descripcion}</p>
+	<p>{desc}</p>
 	<hr />
 	<p class="mb-0">{detalle}</p>
+	<a href={link} class="btn btn-primary">Ir a {titulo}</a>
 </div>

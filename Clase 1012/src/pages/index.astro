@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro"
 import Alerta from "../components/alerta.astro"
 import TarjetaPurificaciones from "../components/alertaDescripcion.astro"
+import Seccion from "../components/Seccion.astro"
 import DataPurificaciones from "../assets/data.json"
 
 DataPurificaciones.forEach((item) => {
@@ -9,16 +10,33 @@ DataPurificaciones.forEach((item) => {
 })
 ---
 
+
+
 <Layout titulo="Purificacion de agua">
-	{
-		DataPurificaciones.map((item) => {
-			return(
-				<TarjetaPurificaciones titulo={item.titulo} descripcion={item.descripcion} detalle={item.detalle}/>
-			)
-		})
+	<Seccion titulo="Seccion 1">
+		<h1>La importancia de filtrar el agua</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos in dolores omnis ad enim, voluptate non repellendus provident sunt officia, aliquam voluptates adipisci libero itaque officiis nobis pariatur ratione!</p>
+		<a class="btn btn-info" href="">Ir a sitio de sanidad</a>
+	</Seccion>
+	<Seccion titulo="Seccion 2">
+		{
+			DataPurificaciones.map((item) => {
+				return (
+					<TarjetaPurificaciones publicacion={item}	/>
+				)
+			})
+		}
+	</Seccion>
+
+</Layout>
+
+<style>
+	.seccion{
+		
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 15px;
 	}
 
-	<!-- <Alerta titulo="Hola gente"/>
-	<Alerta titulo="chau gente"/>
-	<TarjetaPurificaciones titulo="titulo 1" descripcion="desc 1" detalle="detalle 1"/> -->
-</Layout>
+	
+</style>
