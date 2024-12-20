@@ -29,12 +29,11 @@ fetch("https://jsonplaceholder.typicode.com/users")
 			td_usuario.innerText = usuario.name
 			td_website.innerText = usuario.website
 
-			// http://127.0.0.1:5500/Clase%201712/posts.html?userId=6
 			link.innerText = `Ver posts de ${usuario.name}` // interpolacion
 			// link.innerText = 'Ver posts de' + usuario.name // concatenacion
 			link.setAttribute(
 				"href",
-				`http://127.0.0.1:5501/Clase%201712/posts.html?userId=${usuario.id}`
+				`http://127.0.0.1:5500/posts.html?id=${usuario.id}`
 			)
 
 			td_boton.appendChild(link)
